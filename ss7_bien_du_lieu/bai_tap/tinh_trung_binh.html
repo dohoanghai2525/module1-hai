@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+     <h1> Tính điểm trung bình các môn học </h1>
+
+     <tr>
+            <td><strong>Nhập điểm môn Vật lý</strong></td>
+            <td><input type="text" id="Physics" > </td>
+        </tr>
+        <tr>
+            <td><strong>Nhập điểm môn Hóa học</strong></td>
+            <td><input type="text" id="Chemistry"></td>
+        </tr>
+        <tr>
+            <td><strong>Nhập điểm môn Sinh học</strong></td>
+            <td> <input type="text" id="Biological"></td>
+        </tr>
+        <button onclick = "tinh_diem()" >Tính</button>
+        <label> Điểm trung bình = </label>
+        <label id="average"></label>
+          <script>
+              function tinh_diem() {
+                  let diemly=  + document.getElementById("Physics").value
+                  let diemhoa= + document.getElementById("Chemistry").value
+                  let diemsinh=+ document.getElementById("Biological").value
+                  let DTB=(diemly+diemhoa+diemsinh)/3
+                  document.getElementById("average").innerText="Điểm trung bình của bạn là: " +DTB
+              }
+
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

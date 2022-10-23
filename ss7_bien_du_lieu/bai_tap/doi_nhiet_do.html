@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doi nhiet do  </title>
+</head>
+<body>
+     <h1>Chuyển đổi nhiệt độ</h1>
+         <tr>
+             <td>
+                 <strong> Độ C</strong>
+             </td>
+             <td>
+                 <input type="number" id="nhapc">
+             </td>
+         </tr>
+              <button onclick = "chuyen_doi_nhiet()" >chuyển</button>
+         <tr>
+             <td>
+                 <strong> Độ F</strong>
+             </td>
+             <td>
+                 <input type="number" id="nhapf">
+             </td>
+         </tr>
+              <label> F </label>
+
+                  <script>
+                         function chuyen_doi_nhiet(){
+                             let c= +document.getElementById("nhapc").value
+                             let f= (c*9)/5+32
+                             document.getElementById("nhapf").value=f
+                         }
+                  </script>
+
+
+
+
+</body>
+</html>

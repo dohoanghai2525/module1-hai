@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình tròn</title>
+</head>
+<body>
+      <h1> Chương trình tính diện tích hình tròn </h1>
+
+
+      <lable>Hãy nhập dữ liệu đã có</lable>
+
+              <input type="number" name="bankinh" id="kinh">
+
+
+      <lable>Diện tích hình tròn</lable>
+
+           <button onclick = "tinh_dien_tich()">tính</button>
+
+
+      <label>kết quả diện tích là </label>
+      <label id="ketqua">.... </label>
+      <script>
+             function tinh_dien_tich(){
+                 debugger
+                 let bankinh= +document.getElementById("kinh").value;
+                 let pi=3.14;
+                 let dientich= pi*bankinh*bankinh;
+                 document.getElementById("ketqua").innerHTML =dientich;
+             }
+      </script>
+
+
+
+</body>
+</html>
