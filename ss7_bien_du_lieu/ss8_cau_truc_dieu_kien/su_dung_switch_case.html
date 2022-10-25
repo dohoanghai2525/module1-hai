@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng switch case</title>
+</head>
+<body>
+
+<input type="text" name="text" value="" id="text">
+
+<button type="button" value="" name="" onclick="tinh_ngay()">Tính ngày</button>
+<p id="result"></p>
+</body>
+<script>
+
+    function tinh_ngay() {
+        let result = document.getElementById("text");
+        result = parseInt(result.value);
+        switch (result) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+                document.getElementById('result').innerText = ("Tháng " + result + " có 31 ng ");
+                break;
+            case  4:
+            case  6:
+            case  9:ày
+            case 11:
+                document.getElementById('result').innerText = ("Tháng " + result + " có 30 ngày ");
+                break;
+            case 2 :
+                document.getElementById('result').innerText = ("Tháng " + result + " có 28 hoặc 29 ngày ");
+                break;
+            default :
+                document.getElementById('result').innerText =('Vui lòng không nhập tháng 13');
+        }
+    }
+</script>
+
+
+
+
+</html>
