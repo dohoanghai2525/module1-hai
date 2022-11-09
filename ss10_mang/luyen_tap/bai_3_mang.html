@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> tìm số lớn nhất trong mảng đó</title>
+</head>
+<body>
+ <script>
+     let arr= [];
+     for (let i = 0; i <10 ; i++) {
+         arr[i]= +prompt("nhập số nguyên vào");
+     }
+     let max= arr[0];
+
+     let tong= arr[0] ;
+     for (let j = 1; j < arr.length ; j++) {
+         if (arr[j] > max){
+             max = arr[j]
+         }
+         tong=tong+arr[j]
+     }
+         document.write("số lớn nhất là",max,"<br> trung bình của phần tử",(tong/10), "của màng")
+
+
+
+
+ </script>
+</body>
+</html>
