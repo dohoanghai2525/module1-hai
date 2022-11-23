@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô tả hình chữ nhật</title>
+</head>
+<body>
+<script>
+    class Hinhchunhat{
+       constructor(chieudai,chieurong) {
+       this.chieudai= chieudai;
+       this.chieurong= chieurong;
+       }
+        dientich(){
+         return  this.chieudai*this.chieurong;
+        }
+        chuvi(){
+            return  (this.chieudai+this.chieurong)*2;
+        }
+    }
+    let dai= +prompt("nhập chiều dài vào đây")
+    let rong=+prompt("nhập chiều rộng vào đây")
+    let hinhchunhat= new Hinhchunhat(dai,rong);
+    document.write("diện tích hình chữ nhật : "+hinhchunhat.dientich()+"<br>")
+    document.write("chu vi hình chữ nhật : " +hinhchunhat.chuvi())
+
+
+
+
+
+</script>
+</body>
+</html>
